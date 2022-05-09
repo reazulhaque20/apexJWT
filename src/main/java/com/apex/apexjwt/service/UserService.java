@@ -7,6 +7,7 @@ import com.apex.apexjwt.model.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import javax.jws.soap.SOAPBinding;
 import java.util.HashSet;
 import java.util.Set;
 
