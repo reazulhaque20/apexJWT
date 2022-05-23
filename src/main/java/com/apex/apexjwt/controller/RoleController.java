@@ -3,16 +3,16 @@ package com.apex.apexjwt.controller;
 import com.apex.apexjwt.model.Role;
 import com.apex.apexjwt.response.Response;
 import com.apex.apexjwt.service.RoleService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import lombok.RequiredArgsConstructor;
+import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.web.bind.annotation.*;
 
+@RequiredArgsConstructor
 @RestController
+@PreAuthorize("hasRole('Admin')")
 public class RoleController {
 
-    @Autowired
-    private RoleService roleService;
+    private final RoleService roleService;
 
     @PostMapping({"/createNewRole"})
     public Response createNewRole(@RequestBody Role role){
@@ -25,5 +25,10 @@ public class RoleController {
         }
 
         return response;
+    }
+
+    @GetMapping("/getRole/{roleName}")
+    public Role getRole(@PathVariable("roleName") String roleName){
+        return roleService.findRoleByRoleName(roleName);
     }
 }

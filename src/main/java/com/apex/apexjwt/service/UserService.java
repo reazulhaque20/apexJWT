@@ -1,58 +1,18 @@
 package com.apex.apexjwt.service;
 
-import com.apex.apexjwt.dao.RoleDAO;
-import com.apex.apexjwt.dao.UserDAO;
 import com.apex.apexjwt.model.Role;
 import com.apex.apexjwt.model.User;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import com.apex.apexjwt.response.Response;
+import java.util.List;
 
-import javax.jws.soap.SOAPBinding;
-import java.util.HashSet;
-import java.util.Set;
+public interface UserService {
 
-@Service
-public class UserService {
-
-    @Autowired
-    private UserDAO userDAO;
-
-    @Autowired
-    private RoleDAO roleDAO;
-
-    public User registerNewUser(User user){
-        return userDAO.save(user);
-    }
-
-    public void initRolesAndUsers(){
-        Role adminRole = new Role();
-        adminRole.setRoleName("Admin");
-        adminRole.setRoleDescription("Admin Role");
-        adminRole = roleDAO.save(adminRole);
-
-        Role userRole = new Role();
-        userRole.setRoleName("User");
-        userRole.setRoleDescription("User Role");
-        userRole = roleDAO.save(userRole);
-
-        User adminUser = new User();
-        adminUser.setFirstName("admin");
-        adminUser.setLastName("admin");
-        adminUser.setUserName("admin");
-        adminUser.setPassword("admin");
-        Set<Role> adminRoles = new HashSet<>();
-        adminRoles.add(adminRole);
-        adminUser.setRoles(adminRoles);
-        userDAO.save(adminUser);
-
-        User user = new User();
-        user.setFirstName("user");
-        user.setLastName("user");
-        user.setUserName("user");
-        user.setPassword("user");
-        Set<Role> userRoles = new HashSet<>();
-        userRoles.add(userRole);
-        user.setRoles(userRoles);
-        userDAO.save(user);
-    }
+    User registerNewUser(User user, String roleReq);
+    String changepassword(User user);
+    List<User> findUserList();
+    String getEncodedPassword(String password);
+    Response updateUser(User user);
+    List<User> getReportingUser(String deptName);
+    User findUserByUserId(String userId);
+    Response addUser(User user, String roleName);
 }

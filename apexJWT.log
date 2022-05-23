@@ -1,0 +1,115 @@
+2022-05-21 12:45:35.176  INFO 9088 --- [main] com.apex.apexjwt.ApexJwtApplication      : Starting ApexJwtApplication using Java 1.8.0_231 on AHL-504646 with PID 9088 (C:\Users\Reazul.AHL-504646\IdeaProjects\apexJWT\target\classes started by Reazul in C:\Users\Reazul.AHL-504646\IdeaProjects\apexJWT)
+2022-05-21 12:45:35.179  INFO 9088 --- [main] com.apex.apexjwt.ApexJwtApplication      : No active profile set, falling back to 1 default profile: "default"
+2022-05-21 12:45:36.531  INFO 9088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-21 12:45:36.604  INFO 9088 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 63 ms. Found 4 JPA repository interfaces.
+2022-05-21 12:45:37.155  INFO 9088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-21 12:45:37.164  INFO 9088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-21 12:45:37.164  INFO 9088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-21 12:45:37.301  INFO 9088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-21 12:45:37.301  INFO 9088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2058 ms
+2022-05-21 12:45:37.594  INFO 9088 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-21 12:45:37.635  INFO 9088 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-05-21 12:45:37.773  INFO 9088 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-21 12:45:37.864  INFO 9088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-21 12:45:37.974  INFO 9088 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-21 12:45:37.991  INFO 9088 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-21 12:45:38.563  INFO 9088 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-21 12:45:38.575  INFO 9088 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-21 12:45:39.304  WARN 9088 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-21 12:45:40.380  INFO 9088 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-21 12:45:40.408  INFO 9088 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58a9e64d, org.springframework.security.web.context.SecurityContextPersistenceFilter@5fa9971f, org.springframework.security.web.header.HeaderWriterFilter@341df373, org.springframework.web.filter.CorsFilter@7657d29f, org.springframework.security.web.authentication.logout.LogoutFilter@19c06762, com.apex.apexjwt.configuration.JwtRequestFilter@6a4f7c17, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@684430c1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1d4531fa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ace3, org.springframework.security.web.session.SessionManagementFilter@64df8422, org.springframework.security.web.access.ExceptionTranslationFilter@6a7ab205, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@567baa55]
+2022-05-21 12:45:40.756  INFO 9088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-21 12:45:40.770  INFO 9088 --- [main] com.apex.apexjwt.ApexJwtApplication      : Started ApexJwtApplication in 6.145 seconds (JVM running for 7.126)
+2022-05-21 12:45:41.167  INFO 9088 --- [RMI TCP Connection(4)-192.168.5.158] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-21 12:45:41.167  INFO 9088 --- [RMI TCP Connection(4)-192.168.5.158] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-21 12:45:41.169  INFO 9088 --- [RMI TCP Connection(4)-192.168.5.158] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-21 12:45:52.974  INFO 9088 --- [http-nio-8081-exec-1] c.apex.apexjwt.controller.JwtController  : JWTRequest: JwtRequest(userName=admin, password=admin)
+2022-05-21 12:49:21.114  INFO 9088 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-21 12:49:21.116  INFO 9088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-21 12:49:21.122  INFO 9088 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-21 12:49:24.506  INFO 4540 --- [main] com.apex.apexjwt.ApexJwtApplication      : Starting ApexJwtApplication using Java 1.8.0_231 on AHL-504646 with PID 4540 (C:\Users\Reazul.AHL-504646\IdeaProjects\apexJWT\target\classes started by Reazul in C:\Users\Reazul.AHL-504646\IdeaProjects\apexJWT)
+2022-05-21 12:49:24.509  INFO 4540 --- [main] com.apex.apexjwt.ApexJwtApplication      : No active profile set, falling back to 1 default profile: "default"
+2022-05-21 12:49:25.721  INFO 4540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-21 12:49:25.793  INFO 4540 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 62 ms. Found 4 JPA repository interfaces.
+2022-05-21 12:49:26.299  INFO 4540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-21 12:49:26.307  INFO 4540 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-21 12:49:26.307  INFO 4540 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-21 12:49:26.462  INFO 4540 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-21 12:49:26.462  INFO 4540 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1890 ms
+2022-05-21 12:49:26.770  INFO 4540 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-21 12:49:26.813  INFO 4540 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-05-21 12:49:26.996  INFO 4540 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-21 12:49:27.124  INFO 4540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-21 12:49:27.274  INFO 4540 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-21 12:49:27.294  INFO 4540 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-21 12:49:27.964  INFO 4540 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-21 12:49:27.976  INFO 4540 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-21 12:49:28.474  WARN 4540 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-21 12:49:29.606  INFO 4540 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-21 12:49:29.636  INFO 4540 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@396ec737, org.springframework.security.web.context.SecurityContextPersistenceFilter@4965454c, org.springframework.security.web.header.HeaderWriterFilter@56adbb07, org.springframework.web.filter.CorsFilter@35d53cd8, org.springframework.security.web.authentication.logout.LogoutFilter@6d8096ee, com.apex.apexjwt.configuration.JwtRequestFilter@703e5614, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5644f664, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f5288c5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1bed61d2, org.springframework.security.web.session.SessionManagementFilter@1a6a4595, org.springframework.security.web.access.ExceptionTranslationFilter@2202c92f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1f251bf1]
+2022-05-21 12:49:29.978  INFO 4540 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-21 12:49:29.993  INFO 4540 --- [main] com.apex.apexjwt.ApexJwtApplication      : Started ApexJwtApplication in 6.072 seconds (JVM running for 6.982)
+2022-05-21 12:49:30.057  INFO 4540 --- [RMI TCP Connection(1)-192.168.5.158] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-21 12:49:30.057  INFO 4540 --- [RMI TCP Connection(1)-192.168.5.158] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-21 12:49:30.059  INFO 4540 --- [RMI TCP Connection(1)-192.168.5.158] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-05-21 12:49:57.112  INFO 4540 --- [http-nio-8081-exec-1] c.apex.apexjwt.controller.JwtController  : JWTRequest: JwtRequest(userName=admin, password=admin)
+2022-05-21 14:39:29.916  INFO 4540 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-21 14:39:29.969  INFO 4540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-21 14:39:29.976  INFO 4540 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-21 14:39:34.321  INFO 8376 --- [main] com.apex.apexjwt.ApexJwtApplication      : Starting ApexJwtApplication using Java 1.8.0_231 on AHL-504646 with PID 8376 (C:\Users\Reazul.AHL-504646\IdeaProjects\apexJWT\target\classes started by Reazul in C:\Users\Reazul.AHL-504646\IdeaProjects\apexJWT)
+2022-05-21 14:39:34.324  INFO 8376 --- [main] com.apex.apexjwt.ApexJwtApplication      : No active profile set, falling back to 1 default profile: "default"
+2022-05-21 14:39:35.583  INFO 8376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-21 14:39:35.665  INFO 8376 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 71 ms. Found 4 JPA repository interfaces.
+2022-05-21 14:39:36.216  INFO 8376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2022-05-21 14:39:36.224  INFO 8376 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-05-21 14:39:36.225  INFO 8376 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-21 14:39:36.432  INFO 8376 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-05-21 14:39:36.433  INFO 8376 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2044 ms
+2022-05-21 14:39:36.766  INFO 8376 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-21 14:39:36.820  INFO 8376 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-05-21 14:39:36.988  INFO 8376 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-21 14:39:37.096  WARN 8376 --- [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2022-05-21 14:39:37.098  WARN 8376 --- [main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2022-05-21 14:39:37.098  INFO 8376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-05-21 14:39:37.228  INFO 8376 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-05-21 14:39:37.250  INFO 8376 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-21 14:39:37.941  INFO 8376 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-21 14:39:37.952  INFO 8376 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-21 14:39:38.525  WARN 8376 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-21 14:39:39.792  INFO 8376 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-21 14:39:39.822  INFO 8376 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@eda7dd3, org.springframework.security.web.context.SecurityContextPersistenceFilter@1299c874, org.springframework.security.web.header.HeaderWriterFilter@4172c967, org.springframework.web.filter.CorsFilter@9d7a853, org.springframework.security.web.authentication.logout.LogoutFilter@18d14de3, com.apex.apexjwt.configuration.JwtRequestFilter@4a10c019, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@629cf53c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7091a016, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71c69628, org.springframework.security.web.session.SessionManagementFilter@362fd4e9, org.springframework.security.web.access.ExceptionTranslationFilter@374bf34b, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6b60d99c]
+2022-05-21 14:39:40.214  INFO 8376 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-21 14:39:40.230  INFO 8376 --- [main] com.apex.apexjwt.ApexJwtApplication      : Started ApexJwtApplication in 6.489 seconds (JVM running for 7.629)
+2022-05-21 14:39:40.496  INFO 8376 --- [RMI TCP Connection(2)-192.168.5.158] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-21 14:39:40.496  INFO 8376 --- [RMI TCP Connection(2)-192.168.5.158] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-05-21 14:39:40.499  INFO 8376 --- [RMI TCP Connection(2)-192.168.5.158] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2022-05-21 14:42:40.482  INFO 8376 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-05-21 14:42:40.485  INFO 8376 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-05-21 14:42:40.491  INFO 8376 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-05-21 14:44:47.887  INFO 3824 --- [main] c.a.a.ApexJwtApplication                 : Starting ApexJwtApplication using Java 1.8.0_231 on AHL-504646 with PID 3824 (C:\Users\Reazul.AHL-504646\IdeaProjects\apexJWT\target\classes started by Reazul in C:\Users\Reazul.AHL-504646\IdeaProjects\apexJWT)
+2022-05-21 14:44:47.895  INFO 3824 --- [main] c.a.a.ApexJwtApplication                 : No active profile set, falling back to 1 default profile: "default"
+2022-05-21 14:44:49.032  INFO 3824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-05-21 14:44:49.111  INFO 3824 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 70 ms. Found 4 JPA repository interfaces.
+2022-05-21 14:44:49.765  INFO 3824 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8081 (http)
+2022-05-21 14:44:49.879  INFO 3824 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-05-21 14:44:49.879  INFO 3824 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.62]
+2022-05-21 14:44:50.037  INFO 3824 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-05-21 14:44:50.037  INFO 3824 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2076 ms
+2022-05-21 14:44:50.339  INFO 3824 --- [main] o.h.j.i.u.LogHelper                      : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-05-21 14:44:50.402  INFO 3824 --- [main] o.h.Version                              : HHH000412: Hibernate ORM core version 5.6.8.Final
+2022-05-21 14:44:50.572  INFO 3824 --- [main] o.h.a.c.Version                          : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-05-21 14:44:50.698  WARN 3824 --- [main] c.z.h.HikariConfig                       : HikariPool-1 - maxLifetime is less than 30000ms, setting to default 1800000ms.
+2022-05-21 14:44:50.698  WARN 3824 --- [main] c.z.h.HikariConfig                       : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2022-05-21 14:44:50.698  INFO 3824 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Starting...
+2022-05-21 14:44:50.855  INFO 3824 --- [main] c.z.h.HikariDataSource                   : HikariPool-1 - Start completed.
+2022-05-21 14:44:50.888  INFO 3824 --- [main] o.h.d.Dialect                            : HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2022-05-21 14:44:51.564  INFO 3824 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-05-21 14:44:51.577  INFO 3824 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-05-21 14:44:52.119  WARN 3824 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-05-21 14:44:53.585  INFO 3824 --- [main] o.s.b.a.e.w.EndpointLinksResolver        : Exposing 1 endpoint(s) beneath base path '/actuator'
+2022-05-21 14:44:53.624  INFO 3824 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@79a92277, org.springframework.security.web.context.SecurityContextPersistenceFilter@2e96489b, org.springframework.security.web.header.HeaderWriterFilter@2e03bb74, org.springframework.web.filter.CorsFilter@7712df76, org.springframework.security.web.authentication.logout.LogoutFilter@42095996, com.apex.apexjwt.configuration.JwtRequestFilter@22ed2886, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@24ac87a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@f348e10, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@e98adb2, org.springframework.security.web.session.SessionManagementFilter@48a38a12, org.springframework.security.web.access.ExceptionTranslationFilter@426bf2f2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5cf6ba1c]
+2022-05-21 14:44:54.216  INFO 3824 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8081 (http) with context path ''
+2022-05-21 14:44:54.236  INFO 3824 --- [main] c.a.a.ApexJwtApplication                 : Started ApexJwtApplication in 7.202 seconds (JVM running for 9.425)
+2022-05-21 14:44:54.915  INFO 3824 --- [RMI TCP Connection(1)-192.168.5.158] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-05-21 14:44:54.915  INFO 3824 --- [RMI TCP Connection(1)-192.168.5.158] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-05-21 14:44:54.920  INFO 3824 --- [RMI TCP Connection(1)-192.168.5.158] o.s.w.s.DispatcherServlet                : Completed initialization in 4 ms

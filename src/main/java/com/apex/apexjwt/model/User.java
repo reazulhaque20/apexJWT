@@ -20,6 +20,18 @@ public class User {
     private String firstName;
     private String lastName;
     private String password;
+    private String userId;
+    private String empName;
+    private String designation;
+    private String department;
+    private String workLocation;
+    private String company;
+    private String email;
+    private String mobile;
+    private String joiningDate;
+    private boolean isEnable;
+    private String extNo;
+    private String reportingTo;
     @ManyToMany(cascade = CascadeType.MERGE, fetch = FetchType.EAGER)
     @JoinTable(
             name = "user_role",
